@@ -17,7 +17,7 @@
 
  - Load_utils
  
- ``` python3 -m pip install git+https://github.com/FrancoisNadeau/load_utils.git
+ ``` python3 -m pip install git+https://github.com/FrancoisNadeau/load_utils.git ```
 
  - Scanzip
 
