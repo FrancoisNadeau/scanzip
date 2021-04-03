@@ -6,3 +6,18 @@
 
  - See each function for more details
 
+#### Requires Python 3.6 and higher
+#### Relies on functions found in Sniffbytes module
+
+#### Install from source:
+
+ - Sniffbytes
+
+``` python3 -m pip install git+https://github.com/FrancoisNadeau/sniffbytes.git ```
+
+ - Scanzip
+
+``` python3 -m pip install git+https://github.com/FrancoisNadeau/scanzip.git ```
+
+
+
