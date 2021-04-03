@@ -15,6 +15,10 @@
 
 ``` python3 -m pip install git+https://github.com/FrancoisNadeau/sniffbytes.git ```
 
+ - Load_utils
+ 
+ ``` python3 -m pip install git+https://github.com/FrancoisNadeau/load_utils.git
+
  - Scanzip
 
 ``` python3 -m pip install git+https://github.com/FrancoisNadeau/scanzip.git ```
