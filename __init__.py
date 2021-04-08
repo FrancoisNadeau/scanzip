@@ -7,5 +7,5 @@ from .get_ntpl import get_ntpl
 from .zscanner import zscanner
 from .save_archv import save_archv
 from .xtrct_archv import xtct_archv
-from .scanzip.scanzip import scanzip
+from .scanzip.scan_zip import scan_zip
 
