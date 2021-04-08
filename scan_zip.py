@@ -8,15 +8,15 @@ from os.path import expanduser as xpu
 import pandas as pd
 from load_utils.evenodd import evenodd
 from load_utils.get_dst_path import get_dst_path
-from sniffbytes.filter_lst_exc import filter_lst_exc
-from sniffbytes.filter_lst_inc import filter_lst_inc
+from load_utils.filterlist_exc import filterlist_exc
+from load_utils.filterlist_inc import filterlist_inc
 from sniffbytes.stream2file import stream2file
 from .get_ntpl import get_ntpl
 from .zscanner import zscanner
 from .save_archv import save_archv
-from .xtrct_archv import xtct_archv
+from .xtrct_archv import xtrct_archv
 
-def scanzip(
+def scan_zip(
     archv_path: Union[os.PathLike, str],
     ntpl: Union[str, list, tuple] = None,
     exclude: Union[str, list, tuple] = None,

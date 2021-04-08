@@ -6,7 +6,7 @@ from typing import Union
 import pandas as pd
 
 from .get_ntpl import get_ntpl
-from loadutils.evenodd import evenodd
+from load_utils.evenodd import evenodd
 
 def zscanner(
     myzip: Union[str, zipfile.ZipFile],
@@ -30,7 +30,7 @@ def zscanner(
                         desc = "scanning archive"))),
               dtype = object).sort_values("filename").reset_index(drop=True)
 
-def main:
+def main():
     if __name__ == __main__:
         zscanner(myzip, ntpl, exclude)
 
