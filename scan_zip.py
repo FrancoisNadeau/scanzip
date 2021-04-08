@@ -16,7 +16,7 @@ from .zscanner import zscanner
 from .save_archv import save_archv
 from .xtrct_archv import xtct_archv
 
-def scanzip(
+def scan_zip(
     archv_path: Union[os.PathLike, str],
     ntpl: Union[str, list, tuple] = None,
     exclude: Union[str, list, tuple] = None,
