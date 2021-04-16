@@ -3,7 +3,7 @@
 from typing import Union
 from scanzip.getnametuple import getnametuple
 import zipfile
-from load_utils.filterlist_inc import filterlist_inc
+from loadutils.filterlist_inc import filterlist_inc
 
 def get_ntpl(
     myzip: zipfile.ZipFile,
