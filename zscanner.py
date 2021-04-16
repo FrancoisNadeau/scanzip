@@ -6,7 +6,7 @@ from typing import Union
 import pandas as pd
 
 from .get_ntpl import get_ntpl
-from load_utils.evenodd import evenodd
+from loadutils.evenodd import evenodd
 
 def zscanner(
     myzip: Union[str, zipfile.ZipFile],
