@@ -3,8 +3,8 @@
 import os
 from typing import Union
 import pandas as pd
-from load_utils.get_dst_path import get_dst_path
-from load_utils.filterlist_inc import filterlist_inc
+from loadutils.get_dst_path import get_dst_path
+from loadutils.filterlist_inc import filterlist_inc
 from sniffbytes.stream2file import stream2file
 
 ''' Doesn't actually run the extraction job '''
