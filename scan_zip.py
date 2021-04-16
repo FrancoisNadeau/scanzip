@@ -6,10 +6,10 @@ from tqdm import tqdm
 from typing import Union
 from os.path import expanduser as xpu
 import pandas as pd
-from load_utils.evenodd import evenodd
-from load_utils.get_dst_path import get_dst_path
-from load_utils.filterlist_exc import filterlist_exc
-from load_utils.filterlist_inc import filterlist_inc
+from loadutils.evenodd import evenodd
+from loadutils.get_dst_path import get_dst_path
+from loadutils.filterlist_exc import filterlist_exc
+from loadutils.filterlist_inc import filterlist_inc
 from sniffbytes.stream2file import stream2file
 from .get_ntpl import get_ntpl
 from .zscanner import zscanner
