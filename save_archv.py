@@ -14,6 +14,7 @@ def save_archv(
     to_xtrct: Union[str, list, tuple],
     dst_path: Union[str, os.PathLike]
 ) -> None:
+    """ Writes unzipped file buffers to disk. """
     [stream2file(row[1].bsheets,
                  os.path.join(get_dst_path(dst_path),
                        os.path.basename(row[1].filename).lower()))
