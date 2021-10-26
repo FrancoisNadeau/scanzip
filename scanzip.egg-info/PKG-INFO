@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: scanzip
+Version: 0.0.1
+Summary: Module to help with zipfile compression, extraction, encoding and formatting
+Home-page: https://github.com/FrancoisNadeau/scanzip.git
+Author: francois.nadeau.1
+Author-email: francois.nadeau.1@umontreal.ca
+License: UNKNOWN
+Description: Module to help with zipfile compression, extraction, encoding and formatting
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst

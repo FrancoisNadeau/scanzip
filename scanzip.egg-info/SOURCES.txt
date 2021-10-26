@@ -1,0 +1,6 @@
+README.md
+setup.py
+scanzip.egg-info/PKG-INFO
+scanzip.egg-info/SOURCES.txt
+scanzip.egg-info/dependency_links.txt
+scanzip.egg-info/top_level.txt
