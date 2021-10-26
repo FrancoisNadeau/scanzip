@@ -1,7 +1,7 @@
 #!usr/bin/env/python3
 
 from typing import Union
-from scanzip.getnametuple import getnametuple
+from getnametuple import getnametuple
 import zipfile
 from loadutils.filterlist_inc import filterlist_inc
 
