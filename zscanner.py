@@ -26,7 +26,7 @@ def zscanner(
                             .replace(itm, itm.replace(" ", "_"))
                             if " " in itm
                             else repr(myzip.getinfo(itm)).strip(" ")
-                            for itm in get_ntpl(myzip, ntpl, exclude)),
+                            for itm in getnametuple(myzip, ntpl, exclude)),
                         desc = "scanning archive"))),
               dtype = object).sort_values("filename").reset_index(drop=True)
 
