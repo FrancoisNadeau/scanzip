@@ -4,6 +4,8 @@ import os
 from typing import Union
 from zipfile import ZipFile
 
+exc = lambda lst, ec: [itm for itm in lst if all(sub not in itm for sub in ec)]
+
 def getnametuple(myzip: zipfile.ZipFile) -> tuple:
     """ Adjustment to ZipFile.namelist() method.
     
@@ -21,20 +23,21 @@ def getnametuple(myzip: zipfile.ZipFile) -> tuple:
     Returns:
         Tuple containing a zip file member names
     """
-
-    return tuple(
-        sorted(
-            list(
-                itm
-                for itm in myzip.namelist()
-                if os.path.basename(itm).startswith(".") == False
-                and "__MACOSX" not in itm
-                and "textClipping" not in itm
-                and itm != os.path.splitext(os.path.basename(
-                    os.path.dirname(itm)))[0] + "/"
-            )
-        )
-    )
+    exclude = ['.DS_Store', '_MACOSX', 'textClipping']
+    return exc(myzip.namelist(), exclude)
+#     return tuple(
+#         sorted(
+#             list(
+#                 itm
+#                 for itm in myzip.namelist()
+#                 if os.path.basename(itm).startswith(".") == False
+#                 and "__MACOSX" not in itm
+#                 and "textClipping" not in itm
+#                 and itm != os.path.splitext(os.path.basename(
+#                     os.path.dirname(itm)))[0] + "/"
+#             )
+#         )
+#     )
 
 def main():
     if __name__ == __main__:
